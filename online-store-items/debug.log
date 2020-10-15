@@ -1,0 +1,289 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column items_app_item.brand does not exist
+LINE 1: ..._app_item"."amount", "items_app_item"."category", "items_app...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/models/query.py", line 274, in __iter__
+    self._fetch_all()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1140, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column items_app_item.brand does not exist
+LINE 1: ..._app_item"."amount", "items_app_item"."category", "items_app...
+                                                             ^
+
+"GET / HTTP/1.1" 500 160978
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2361
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 14818
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+Watching for file changes with StatReloader
+Unauthorized: /
+"GET / HTTP/1.1" 401 183
+Unauthorized: /
+"GET / HTTP/1.1" 401 183
+Unauthorized: /
+"GET / HTTP/1.1" 401 183
+Unauthorized: /
+"GET / HTTP/1.1" 401 183
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 151
+"GET /776b34f8-70a9-430d-8ad9-b0cbf4105ef1/ HTTP/1.1" 200 153
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /category/Eyeliner HTTP/1.1" 200 15351
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /category/eyeliner
+"GET /category/eyeliner HTTP/1.1" 404 2619
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15157
+"GET /by_category/Mascara/ HTTP/1.1" 200 15411
+"GET /by_category/Mascara/ HTTP/1.1" 200 303
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /by_category/Mascara/ HTTP/1.1" 200 303
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /by_category/Mascara/
+"GET /by_category/Mascara/ HTTP/1.1" 404 2577
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /by_category/Mascara/
+"GET /by_category/Mascara/ HTTP/1.1" 404 2577
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /by_category/Mascara/
+"GET /by_category/Mascara/ HTTP/1.1" 404 2577
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15157
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/requesters/authrequester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 303
+"GET /7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 200 149
+Forbidden: /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/
+"PATCH /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 403 58
+Internal Server Error: /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 403, in initial
+    self.check_permissions(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/permissions.py", line 30, in has_permission
+    return AuthRequester().is_superuser(token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/requesters/authrequester.py", line 29, in is_superuser
+    return response['is_superuser']
+TypeError: 'Response' object is not subscriptable
+"PATCH /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 500 15983
+/Users/malenkijkotik/Desktop/progs/rsoi-online-store/online-store-items/items_app/requesters/authrequester.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/
+"PATCH /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 400 42
+"PATCH /change_item/7e9823b1-2c65-43d4-9ada-31c15b1b882d/ HTTP/1.1" 202 151
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10451
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2614
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10451
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2614
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10451
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /
+"GET / HTTP/1.1" 400 67038
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 400 67102
+"GET / HTTP/1.1" 200 10451
+code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÁlXlâ3\x8e¶IáÇi¹b+°¾D\xadº13{î2Öq\xad×\x8d\x08w')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ç»\x08\x12ëYP>\x19\x10zð´\x9d{1\x90\x02C<©\x91_\x81éÚS\x10\x12%Í<')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Watching for file changes with StatReloader

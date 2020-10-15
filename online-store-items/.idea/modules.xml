@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DIPS-3-master/.idea/DIPS-3.iml" filepath="$PROJECT_DIR$/../DIPS-3-master/.idea/DIPS-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-billing/.idea/billing.iml" filepath="$PROJECT_DIR$/../online-store-billing/.idea/billing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-customers/.idea/customers.iml" filepath="$PROJECT_DIR$/../online-store-customers/.idea/customers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/items.iml" filepath="$PROJECT_DIR$/.idea/items.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-api/.idea/online-store-api.iml" filepath="$PROJECT_DIR$/../online-store-api/.idea/online-store-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-auth/.idea/online-store-auth.iml" filepath="$PROJECT_DIR$/../online-store-auth/.idea/online-store-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-front/.idea/online-store-front.iml" filepath="$PROJECT_DIR$/../online-store-front/.idea/online-store-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../online-store-orders/.idea/orders.iml" filepath="$PROJECT_DIR$/../online-store-orders/.idea/orders.iml" />
+    </modules>
+  </component>
+</project>
